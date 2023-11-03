@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+button {
+  max-width: 100%;
+  width: 1400px;
+  min-height: 100%;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(124, 34, 34);
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/photos/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.page {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 400px; /* Adjusted height */
+}
+
+.container {
+  max-width: 500px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  height: 100%; /* Changed to 100% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#submit {
+  margin-top: 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+#submit:hover {
+  background-color: #0056b3;
+}
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+
+  .container {
+      padding: 10px;
+      width: 100%;
+  }
+  .page {
+      width: 90%;
+  }
+}

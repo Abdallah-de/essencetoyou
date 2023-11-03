@@ -1,0 +1,106 @@
+body {
+    font-family: Arial;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.nav-logo img {
+    max-height: 50px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table td {
+    background-color: #f8f9fa;
+}
+
+.table a {
+    text-decoration: none;
+    margin: 2px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.table a.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table a.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.table a.btn-primary:hover, .table a.btn-danger:hover {
+    opacity: 0.8;
+}
+/* Mobile responsiveness using media queries */
+@media (max-width: 768px) {
+    .container {
+        position: absolute;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    table {
+        font-size: 8px;
+        transform: translateY(-10%);
+    }
+
+}
